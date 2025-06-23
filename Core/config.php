@@ -1,21 +1,24 @@
-<?php 
-	
-	//Datos de conexion a base de datos
-	const DB_HOST = "localhost";
-    const DB_NAME = "botica";
-    const DB_USER = "root";
-	const DB_PASSWORD = "";
-	const SGBD="mysql:host=".DB_HOST.";dbname=".DB_NAME;
+<?php  
+    // Datos de conexión a PostgreSQL en Render
+    const DB_HOST = getenv('DB_HOST');
+    const DB_PORT = getenv('DB_PORT'); // PostgreSQL necesita el puerto
+    const DB_NAME = getenv('DB_NAME');
+    const DB_USER = getenv('DB_USER');
+    const DB_PASSWORD = getenv('DB_PASSWORD');
 
-	// Datos de conexión a base de datos en InfinityFree
-    // const DB_HOST = "sql206.infinityfree.com";
-    // const DB_NAME = "if0_39291681_botica";
-    // const DB_USER = "if0_39291681";
-    // const DB_PASSWORD = "GXzrIt5MtEG9";
-    // const SGBD = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME;
+    // Cadena de conexión para PostgreSQL (ojo con 'pgsql')
+    const SGBD = "pgsql:host=" . DB_HOST . ";port=" . DB_PORT . ";dbname=" . DB_NAME;
 
-	//Datos para encryptacion
-	const METHOD="AES-256-CBC";
-    const SECRET_KEY='$#*ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890#*';
-	const SECRET_IV='20001109108103975194753';
-	 
+    // Datos para encriptación
+    const METHOD = "AES-256-CBC";
+    const SECRET_KEY = '$#*ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890#*';
+    const SECRET_IV = '20001109108103975194753';
+
+    try {
+        $conexion = new PDO(SGBD, DB_USER, DB_PASSWORD);
+        $conexion->exec("SET NAMES 'UTF8'");
+        //echo "✅ Conexión exitosa a PostgreSQL";
+    } catch (Exception $e) {
+        die("❌ Error de conexión: " . $e->getMessage());
+    }
+?>
