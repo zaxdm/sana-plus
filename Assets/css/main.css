@@ -1,0 +1,195 @@
+body{
+    color:#6c757d!important;
+}
+.login-card-body, .register-card-body{
+    background: #fff none repeat scroll 0 0;
+    border-radius: 3px;
+    border-top: 3.5px solid #008A00;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    color: #666;
+    padding: 20px;
+}
+.nav-pills .nav-link:not(.active):hover {
+    color: #008A00;
+}
+.btn-info{
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    box-shadow: none;
+}
+.btn-info:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+.breadcrumb-title{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.header-title{
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card-title{
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.card-title i{
+    font-size: 15px;
+}
+.modal-title{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.logotype-title{
+    color: #008A00;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.company{
+    text-transform: uppercase;
+    color: #008A00;
+}
+#btnShows,#btnCancel,#btnBuscar,#btnRegistrar{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+label:not(.form-check-label):not(.custom-file-label) {
+    color:#6c757d;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+label small{
+    font-size: 14px;
+}
+.text_fondo {
+    background:transparent !important;
+}
+.form-control{
+    color: #6c757d !important;
+}
+.table-sale{
+margin: 50px 0 20px 0;
+}
+.table-sale .nav-item .nav-link > label{
+    margin-bottom: .0em;
+}
+.card .nav.flex-column > li {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    margin: 0;
+}
+#total,#most_imp,#most_total,#vuelto{
+    font-size: 16px;
+    text-align: center;
+}
+#tpagado{
+    margin-top: -3px;
+    width: 70px;
+    height: 30px;
+}
+.dropdown-menu-lg {
+    max-width: 300px;
+    min-width: 200px;
+    padding: 0;
+}
+.badge-warning{
+    color:  #fff !important;
+}
+img.table-avatar {
+    border-radius: 50%;
+    display: inline;
+}
+#photoView{
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+}
+#photo, #photoPerfil{
+    display: none;
+}
+.photoLabel{
+    position: absolute;
+    top: 0;
+    width: 95%;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out ;
+    cursor: pointer;
+}
+.photoLabel i {
+    margin-right: 10px;
+}
+.photoLabel:hover {
+    opacity: 1;
+}
+.photoPerfil{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out ;
+    cursor: pointer;
+}
+.photoPerfil:hover {
+    opacity: 1;
+}
+.timeline-perfil{
+    background:transparent !important;
+    border: 1px solid #999;
+    border-radius: 50%;
+    height: 30px;
+    left: 18px;
+    position: absolute;
+    top: 0;
+    width: 30px;
+}
+.timeline-perfil img{
+    width: 100%;
+    height: 100%;
+}
+.table thead th {
+    border-top: 0px solid #dee2e6;
+    border-bottom: 0px solid #dee2e6;
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 20px; 
+
+}
+
+.login-logo img {
+    max-width: 250px;
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.login-box { 
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
