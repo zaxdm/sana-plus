@@ -1,14 +1,10 @@
 <?php  
-    // Datos de conexión a PostgreSQL en Render
-    $DB_HOST = getenv('DB_HOST');
-    $DB_PORT = getenv('DB_PORT');
-    $DB_NAME = getenv('DB_NAME');
-    $DB_USER = getenv('DB_USER');
-    $DB_PASSWORD = getenv('DB_PASSWORD');
-
-    // Cadena de conexión para PostgreSQL (ojo con 'pgsql')
-    $SGBD = "pgsql:host=" . $DB_HOST . ";port=" . $DB_PORT . ";dbname=" . $DB_NAME;
-
+	// Datos de conexión a base de datos en InfinityFree
+    const DB_HOST = "sql206.infinityfree.com";
+    const DB_NAME = "if0_39291681_botica";
+    const DB_USER = "if0_39291681";
+    const DB_PASSWORD = "GXzrIt5MtEG9";
+    const SGBD = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME;
     // Datos para encriptación (estos sí pueden ser constantes porque son valores fijos)
     const METHOD = "AES-256-CBC";
     const SECRET_KEY = '$#*ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890#*';
